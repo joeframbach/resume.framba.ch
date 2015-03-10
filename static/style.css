@@ -1,0 +1,95 @@
+body {
+  background-color: #fffff8;
+}
+
+body * {
+  color: #303030;
+  font-family: Goudy Old Style, Times New Roman, serif;
+  line-height: 1.5rem;
+}
+
+b {
+  color: #000000;
+}
+
+article {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 684px;
+}
+
+article > section {
+  margin: 1.5rem 0 0 0;
+}
+article > section.center {
+  text-align: center;
+}
+article > section > header {
+  font-weight: bold;
+  color: #BC1B39;
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+article > section > ul {
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 0;
+}
+article > section > ul li {
+  display: inline;
+  white-space: nowrap;
+}
+article > section > ul li:not(:last-child):after {
+  content: " \00b7";
+}
+
+article > section section {
+  margin-top: 0.5rem;
+}
+article > section section > :not(header):not(time) {
+  clear: both;
+}
+article > section section > header {
+  font-weight: bold;
+  clear: none;
+  float: left;
+}
+article > section section ul {
+  list-style: none inside;
+  margin: 0.5rem auto 0.5rem 1rem;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+article > section section ul li:before {
+  content: "\00b7";
+}
+
+time {
+  clear: none;
+  float: right;
+}
+
+ul {
+  margin: 0;
+}
+
+#grediv div { 
+  margin: 8px auto; 
+}
+
+@media screen and (max-width: 799px) {
+  .right {
+    clear: left;
+    float: left;
+  }
+  time {
+    clear: both;
+    float: none;
+  }
+}
+
+@media print {
+  li a { display: none; }
+  .load-address { display: none; }
+  .header-links { display: none; }
+}
